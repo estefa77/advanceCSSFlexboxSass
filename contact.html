@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700|Amita:700|Oleo+Script|Pacifico" rel="stylesheet">
+        
+        <script src="https://use.fontawesome.com/88dcd5220d.js"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"> </script>    
+        <script src="js/index.js"></script>
+ 
+
+        <link rel="stylesheet" href="css/icon-font.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <title>Estefa | Das meer Blau</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+
+            <div class="navigation__bg"></div>
+
+            <nav class="navigation__nav">
+
+                <ul class="navigation__list">
+                    <span class="navigation__title">Das Meer Blau</span>
+                    <li class="navigation__item"><a href="http://www.dasmeerblau.com.ar" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="about-me.html" class="navigation__link"><span>02</span>About Me</a></li>
+                    <li class="navigation__item"><a href="work.html" class="navigation__link"><span>03</span>Work</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link"><span>04</span>Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <a href="http://www.dasmeerblau.com.ar/">
+                    <img src="img/logo-white.png" alt="logo" class="header__logo">
+                </a>
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Estefa</span>
+                    <span class="heading-primary--sub">** This is a Beta Version - Personal Page **</span>
+                </h1>
+                <a href="#" class="btn btn--pink btn--animated" id="animarscroll">&darr;</a>
+            </div>
+        </header>   
+
+        <main>                         
+
+            <section class="section-book" id="about">
+                
+                <div class="row">
+                     <p class="paragraph">
+                        <span class="u-text-forced u-margin-bottom-small">NOTE:</span>
+                        THE FUNCTIONALITY FOR THIS FORM IS NOT READY YET!
+                    </p>
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Contact
+                                    </h2>
+                                </div>                                
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="E-mail" id="email" required>
+                                    <label for="email" class="form__label">Write a Correct E-mail</label>
+                                </div>
+                                <div class="form__group">
+                                    <textarea type="comment" class="form__input" placeholder="Add a comment" id="comment"></textarea>
+                                    <label for="comment" class="form__label">Write a Comment</label>
+                                </div> 
+                                <div class="form__group">
+                                     <div>
+                                        <i class="fas fa-map-marker-alt"></i>  
+                                        <span>Location: Argentina, Córdoba</span>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-skype"></i> estefania.carevich2
+                                    </div>
+                                </div>                                 
+                                <div class="form__group">
+                                    <a class="btn btn--green  btn--animated">Send &rarr;</a>    
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="div footer__logo-box">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                    media="(max-width: 37.5em)">
+
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" 
+                         alt="Logo" class="footer__logo"
+                         src="img/logo-green-2x.png" >
+                </picture>
+
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="http://www.dasmeerblau.com.ar" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="about-me.html" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="work.html" class="footer__link">Work</a></li>
+                            <li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by <a href="mailto:estefania.carevich@gmail.com" class="footer__link">Estefania Carevich</a>  Copyright &copy; 2019
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <span class="up icon-arrows-up"></span>
+        
+    </body>
+</html>

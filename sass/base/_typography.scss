@@ -1,0 +1,153 @@
+body {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: $color-gray-dark;
+}
+.heading-primary {
+	color: $color-white;
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	margin-bottom: 6rem;
+
+	&--main {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		
+		animation-name: moveInLeft;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+		
+		//@include absCenter;
+
+		@include respond(phone) {
+			letter-spacing: 1rem;
+			font-family: 5rem;
+			}
+
+		}
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: lighter;
+		letter-spacing: 1.75rem;
+
+		animation-name: moveInRight;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;	
+		}
+
+		@include respond(phone) {
+			letter-spacing: .5rem;			
+		}
+	}
+
+.heading-secondary {
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	display: inline-block;
+	background-image: linear-gradient(
+		to right, $color-tertiary-light, $color-tertiary-dark);
+	-webkit-background-clip: text; //cut the bg using the linear-gradient
+	color: transparent;
+	letter-spacing: .2px;
+	transition: all .2s; 
+
+	@include respond(tablet-portrait) {
+		font-size: 4rem;
+	}
+	
+	@include respond(phone) {
+		font-size: 3rem;
+	}
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1);
+		text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+	}
+}
+.heading-tertiary {
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.heading-four {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	display: inline-block;
+	//background-image: linear-gradient(
+		//to right, $color-black, $color-tertiary-dark-4);
+	-webkit-background-clip: text; //cut the bg using the linear-gradient
+	//color: transparent;
+	color: $color-white;
+	letter-spacing: .2px;
+	transition: all .2s; 
+	margin-bottom: 10rem;
+
+	@include respond(tablet-portrait) {
+		font-size: 3.5rem;
+	}
+	
+	@include respond(phone) {
+		font-size: 2.5rem;
+	}
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1);
+		text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+	}
+}
+
+.heading-five {
+	font-size: 4rem;
+	line-height: 5.5rem;
+	font-weight: initial;
+	text-transform: uppercase;
+	margin: 3rem 0;
+	
+	@include respond(tablet-portrait) {
+		font-size: 3.4rem;
+		margin: 0;
+		padding: 0 2rem;
+	}
+
+	@include respond(phone) {
+		margin: 0;
+		font-size: 2.5rem;
+	}
+}
+
+.heading-six {
+	font-size: 3.5rem;
+	line-height: 4.5rem;
+	font-weight: initial;
+	text-transform: uppercase;
+	margin: 3rem 0;
+	@include respond(phone) {
+		margin: 1rem 0 -5rem 0;
+	}	
+}
+.heading-border {
+	height: 1rem;
+	width: 100%;
+	margin: 0.5rem 0;
+	background: repeating-linear-gradient(-45deg, 
+								$color-tertiary-dark, 
+								$color-tertiary-dark 5px, 
+								$color-tertiary-light 5px, 
+								$color-tertiary-light 10px);
+}
+.paragraph {
+	font-size: $default-font-size;
+
+	&:not(:last-child){
+		margin-bottom: 3rem;
+	}
+
+	&__resume {
+		padding: 1rem 5rem 0 5rem;
+	}
+}
+

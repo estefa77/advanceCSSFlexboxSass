@@ -1,0 +1,153 @@
+.header {
+	height: 80vh;
+	background-size: cover;
+	background-position: top;
+	position: relative;	
+ 	animation: grow 1s ease-in backwards;
+	/*background-image: linear-gradient(
+		to right bottom, 
+		rgba($color-tertiary-light, 0.8), 
+		rgba($color-tertiary-dark, 0.8)), 
+	url(../img/hero-small.jpg);
+	*/
+ /*	background: repeating-linear-gradient(
+      330deg,
+    	rgba(0, 0, 0, 0.5) 31px, 
+    	rgba(0, 0, 0, 0) 40px, 
+      rgba($color-tertiary-light, 0.3) 40px,
+      rgba($color-tertiary-dark, 0.8) 84px
+    );	
+*/
+	
+	/*background-image: repeating-linear-gradient(
+		209deg, 
+		rgba(0, 0, 250, .8) -8px, 
+		rgba(0, 0, 0, .6) 40px, 
+		#ff98ff 40px, 
+		rgba(86, 45, 85, 0.9) 84px
+		);
+*/
+
+	/*
+	BG mAGIC
+	background: repeating-conic-gradient(
+                  hsla(0,0%,100%,.2) 0deg 15deg,
+                  hsla(0,0%,100%,0) 0deg 30deg
+              ) #9f67fc;
+	*/
+
+		/*background: conic-gradient(rgba($color-tertiary-light, 0.6) 25%, 
+								white 0deg 50%, 
+								rgba($color-tertiary-dark, 0.8) 0deg 75%, 
+								white 0deg);
+	background-size: 11rem 11rem;
+	*/
+		background-image: /* Safari 5 */
+				-webkit-gradient(linear, 0 0, 0 100%, 
+					color-stop(0.5, rgba(255, 255, 255, 1)), 
+					color-stop(0.5, rgba(255, 255, 255, 0)), 
+					color-stop(1, rgba(255, 255, 255, 0))),
+				-webkit-gradient(linear, 0 0, 100% 0, 
+					color-stop(0.5, rgba(255, 255, 255, 1)), 
+					color-stop(0.5, rgba(255, 255, 255, 0)), 
+					color-stop(1, rgba(255, 255, 255, 0)));
+			background-image: /* chrome & nightly builds */
+				-webkit-linear-gradient(90deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0)),
+				-webkit-linear-gradient(0, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0));
+			background-image: /* Firefox */
+				-moz-linear-gradient(90deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0)),
+				-moz-linear-gradient(0, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0));
+			background-image: /* opera */
+				-ms-linear-gradient(90deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0) 100%),
+				-ms-linear-gradient(0deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0));
+			background-image: /* opera */
+				-o-linear-gradient(90deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0) 100%),
+				-o-linear-gradient(0, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0));
+			background-image: /* standard */
+				linear-gradient(90deg, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%,
+					rgba(255, 255, 255, 0) 100%),
+				linear-gradient(0, 
+					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0));
+			/* background-color: red; */
+/* 
+Anterior  
+   repeating-linear-gradient(
+		330deg, 
+		rgba(0, 0, 250, .5) -8px, 
+		rgba(0, 0, 0, 0.5) 40px, 
+		#ff98ff 40px, 
+		rgba(86, 67, 250, 0.5) 84px
+		);
+
+}
+	*/
+	
+	@supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+		clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		height: 95vh;
+	}
+
+
+	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+			only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+			only screen and (min-width: 125em){ // 2000/16 the same like media querie
+		
+		background-image: linear-gradient(
+			to right bottom, 
+			rgba($color-tertiary-light, 0.8), 
+			rgba($color-tertiary-dark, 0.8)), 
+		url(../img/hero.jpg);
+	}
+
+	@include respond(phone){
+		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+	}
+
+	&__logo {
+		height: 5.5rem;
+	}
+	&__logo-box {
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+	}
+	&__text-box {
+		width: 86%;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
+
