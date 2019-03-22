@@ -1,0 +1,5 @@
+AddHandler x-httpd-php7-1 .php
+RewriteEngine on
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule (.*) https://www.dasmeerblau.com.ar%{REQUEST_URI} [R=301,L]

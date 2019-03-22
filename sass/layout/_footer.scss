@@ -27,6 +27,7 @@
 		padding-top: 2rem;
 		display: inline-block;
 
+
 		@include respond(tablet-portrait) {
 			width: 100%;
 			text-align: center;
@@ -35,6 +36,9 @@
 
 	&__list {
 		list-style: none;
+		font-size: 2.25rem;
+		letter-spacing: 1px;
+		font-family:"Reklame Script W00 Bold";
 	}
 
 	&__item {
@@ -69,6 +73,13 @@
 		padding-top: 2rem;
 		width: 80%;
 		float: right;
+		font-size: $font-size-link;
+		// letter-spacing: 3px;
+		// font-family:"Reklame Script W00 Bold";
+
+		i {
+			color: $color-tertiary-light;
+		}
 
 		@include respond(tablet-portrait) {
 			width: 100%;

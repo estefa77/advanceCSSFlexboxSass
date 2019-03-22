@@ -1,13 +1,21 @@
 .header {
 	height: 80vh;
- 	//animation: grow 1s ease-in backwards; 
+ 	animation: grow 1s ease-in backwards; 
   	padding: 20rem 0;
 	background-image: linear-gradient(
 		to right bottom, 
 		rgba($color-tertiary-light, 0.9), 
 		rgba($color-tertiary-dark, 0.3)), 
 	url(../img/nat-4.jpg);
-	background-size: cover;
+
+	background: linear-gradient(89deg, #df0e62, #fac70b, #fb3569);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite;
+	-o-animation: AnimationName 15s ease infinite;
+	animation: AnimationName 15s ease infinite;
+
     background-position: top;
     position: relative;
 	
@@ -34,5 +42,6 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 	}
+
 
 }

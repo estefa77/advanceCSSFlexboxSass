@@ -1,0 +1,55 @@
+
+.line {
+
+	&__small {
+		width: 9rem;
+		height: .1rem;
+		margin: 0 auto 1rem auto;
+		background-color: var(--color-header);
+	}
+
+	&__big {
+		width: 20rem;
+		height: .1rem;
+		margin: auto;
+		background-color: var(--color-header);
+	}
+
+}
+
+.common-header {
+	padding: 5rem;
+	text-align: center;
+	color: var(--color-header);
+
+	@include respond(phone500) {
+		font-size: 3rem;
+	}
+
+	&__title {
+		font-size: 4rem;
+		font-weight: 300;
+		letter-spacing: .2rem;
+	}
+
+}
+
+.footer-heading {
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: goldenrod;
+	margin: 1rem 0 3rem 0;
+}
+
+.btn-arrow {
+    margin-left: .5rem;
+    transition: margin-left .4s;
+}
+
+
+.social-icon {
+    transition: all .3s;
+    &:hover {
+    	transform: scale(1) rotateZ(360deg);
+    }
+}

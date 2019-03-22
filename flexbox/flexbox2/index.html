@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">    
+    <link rel="shortcut icon" type="image/png" href="img/crown.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.comp.css">
+
+    </head>
+<body>
+   
+   <div class="navbar">
+
+    <input type="checkbox" class="checkbox" id="click" hidden>
+
+        <div class="sidebar">
+            <label for="click">
+                <div class="menu-icon">
+                    <div class="menu-icon__line menu-icon__line--line-1"></div>
+                    <div class="menu-icon__line menu-icon__line--line-2"></div>
+                    <div class="menu-icon__line menu-icon__line--line-3"></div>
+                </div>
+            </label>
+
+            <ul class="social-icons-list">
+                <li>
+                    <a href="#" class="social-icons-list__link">
+                        <i class="fab fa-facebook-f social-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icons-list__link">
+                        <i class="fab fa-twitter social-icon"></i>
+                    </a>
+                </li>               
+                <li>
+                    <a href="#" class="social-icons-list__link">
+                        <i class="fab fa-google-plus-g social-icon"></i>
+                    </a>
+                </li>                               
+                <li>
+                    <a href="#" class="social-icons-list__link">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                </li>                               
+            </ul>
+
+            <div class="sidebar__year">
+                <p>2019</p>
+            </div>
+        </div>  
+        
+        <!--START NAVIGATION -->
+        <nav class="navigation">
+            <div class="navigation__container-header">
+                <h1 class="navigation__title">Grand Hotel</h1>
+                <form action="" class="navigation__search">
+                    <input type="text" placeholder="Search ..." class="navigation__search--input">
+                    <button class="navigation__search--btn">
+                        <i class="fas fa-search"></i>   
+                    </button>
+                </form>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <a href="#" class="navigation__list__item--link">Home</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#about-us" class="navigation__list__item--link">About Us</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#rooms" class="navigation__list__item--link">rooms</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#" class="navigation__list__item--link">events</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#" class="navigation__list__item--link">customers</a>                    
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#" class="navigation__list__item--link">contact</a>                  
+                </li>
+            </ul>
+            <div class="navigation__copyright">
+                <p>&copy; 2019</p>
+            </div>
+        </nav>
+   </div>
+
+    <!--START HEADER -->
+    <header class="header">
+        <div class="header__brand">
+            <div>
+                <img class="image-logo" src="img/crown.png" width="80">
+            </div>
+            <h3 class="header__brand__title">Hotel Brand</h3>
+        </div>
+
+
+        <div class="header__banner">
+            <h1 class="header__banner--heading">Welcome to Grand Hotel</h1>
+            <p class="header__banner--paragraph">
+                Make your life luxuriors
+            </p>
+            <button class="header__banner--button">Continue ...</button>
+        </div>
+    </header>
+
+   <!--START ABOUT US -->   
+    <section class="about-us" id="about-us">
+        <div class="about-us__content">
+            <h1 class="about-us__content__heading">About Us</h1>
+            <div class="line">
+                <div class="line__small"></div>
+                <div class="line__big"></div>
+            </div>
+            <h3 class="about-us__content__subHeading">Grand Hotel</h3>
+            <p class="about-us__content__paragraph">
+                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+            </p>
+            <button class="about-us__content__btn">Read More
+                <i class="fas fa-angle-double-right btn-arrow"></i>
+            </button>
+        </div>
+
+        <div class="about-us__images">
+            <img src="img/about-us-img-1.jpeg" class="about-us__images__imgdet about-us__images__imgdet--image-1" alt="Img 1">
+            <img src="img/about-us-img-2.jpeg" class="about-us__images__imgdet about-us__images__imgdet--image-2" alt="Img 2">
+            <img src="img/about-us-img-3.jpeg" class="about-us__images__imgdet about-us__images__imgdet--image-3" alt="Img 3">
+            <img src="img/about-us-img-4.jpeg" class="about-us__images__imgdet about-us__images__imgdet--image-4" alt="Img 4">
+        </div>
+    </section>
+
+    <!--START ROOMS -->
+    <section class="rooms" id="rooms">
+        <div class="common-header">
+            <h1 class="common-header__title">Rooms in Gran Hotel</h1>
+            <div class="line">
+                <div class="line__small"></div>
+                <div class="line__big"></div>
+            </div>
+        </div>
+
+        <div class="rooms__card-wrapper">
+            <div class="room-card">
+                <img src="img/single-room.jpeg" alt="Single Room" class="room-card__img">
+                <div class="room-card__content">
+                    <h4 class="room-card__content--heading">Single Room</h4>
+                    <p class="room-card__content--paragraph">
+                        lorem ipsum lorem ipsumlorem ipsum
+                    </p>
+                    <p class="room-card__content--price">usd99</p>
+                    <button class="room-card__content--btn">Book Now
+                        <i class="fas fa-angle-double-right btn-arrow"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="img/double-room.jpeg" alt="Double Room" class="room-card__img">
+                <div class="room-card__content">
+                    <h4 class="room-card__content--heading">Double Room</h4>
+                    <p class="room-card__content--paragraph">
+                        lorem ipsum lorem ipsumlorem ipsum
+                    </p>
+                    <p class="room-card__content--price">usd199</p>
+                    <button class="room-card__content--btn">Book Now
+                        <i class="fas fa-angle-double-right btn-arrow"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="room-card">
+                <img src="img/lux.jpeg" alt="Lux" class="room-card__img">
+                <div class="room-card__content">
+                    <h4 class="room-card__content--heading">Lux</h4>
+                    <p class="room-card__content--paragraph">
+                        lorem ipsum lorem ipsumlorem ipsum
+                    </p>
+                    <p class="room-card__content--price">usd299</p>
+                    <button class="room-card__content--btn">Book Now
+                        <i class="fas fa-angle-double-right btn-arrow"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="room-card">
+                <img src="img/vip.jpeg" alt="Vip" class="room-card__img">
+                <div class="room-card__content">
+                    <h4 class="room-card__content--heading">Lux</h4>
+                    <p class="room-card__content--paragraph">
+                        lorem ipsum lorem ipsumlorem ipsum
+                    </p>
+                    <p class="room-card__content--price">usd350</p>
+                    <button class="room-card__content--btn">Book Now
+                        <i class="fas fa-angle-double-right btn-arrow"></i>
+                    </button>
+                </div>
+            </div>                                    
+        </div>  
+
+        <div class="rooms__content-button">
+            <button class="rooms__content-button--btn">Check all rooms</button>
+        </div>                                      
+
+    </section>
+
+    <!-- START CUSTOMER-->
+    <section class="customer">
+        <div class="common-header">
+            <h1 class="common-header__title">Our Customer</h1>
+            <div class="line">
+                <div class="line__small"></div>
+                <div class="line__big"></div>
+            </div>
+        </div>
+
+        <p class="customer__paragraph">
+            "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.""            
+        </p>    
+
+        <div class="customer__container">
+            <div class="card">
+                <div class="card__imgWrapper">
+                    <img src="img/customer-1.jpeg" alt="Estefania" class="card__imgWrapper--customerImg">
+                </div>
+                <div class="card__info">
+                    <h3 class="card__info--fullname">
+                        Estefania
+                    </h3>
+                    <p class="card__info--detail-1">
+                        Happy Customer                  
+                    </p>
+                    <p class="card__info--detail-2">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__imgWrapper">
+                    <img src="img/customer-2.jpeg" alt="Estefania" class="card__imgWrapper--customerImg">
+                </div>
+                <div class="card__info">
+                    <h3 class="card__info--fullname">
+                        Sebastían
+                    </h3>
+                    <p class="card__info--detail-1">
+                        Happy Customer                  
+                    </p>
+                    <p class="card__info--detail-2">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>                    
+                </div>
+            </div>          
+        </div>
+    </section>
+
+    <!--START FOOTER -->
+    <footer class="footer">
+        <div class="main-part">
+            <div class="footer-section">
+                <h3 class="footer-heading">Grand Hotel</h3>
+                <ul class="footer-section__list">
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Córdoba, Argentina</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">+054 249 4698995</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-section__list">
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Home</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">About us</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Rooms</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Events</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Customer</a>
+                    </li>
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">Contact</a>
+                    </li>                   
+                </ul>
+            </div>  
+
+            <div class="main-part__contact">
+                <h3 class="footer-heading">Contact</h3>             
+                <ul class="footer-section__list">
+                    <li class="footer-section__list__item">
+                        <a href="#" class="footer-section__list__item--link">support@grandhotel.com</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="main-part__gallery">
+                <h3 class="footer-heading">Gallery</h3>             
+                <div class="main-part__gallery__galleryContainer">
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-1.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-2.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-3.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-4.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-5.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>
+                    <div class="main-part__gallery__galleryContainer__imgContainer">
+                        <img src="img/gallery-img-6.jpeg" alt="" class="main-part__gallery__galleryContainer__imgContainer--img">
+                    </div>                                                                  
+                </div>
+            </div>
+        </div>
+
+        <div class="creator-part">
+            <div class="creator-part__textCopyright">
+                <p>Copyright &copy; 2019.</p>
+            </div>
+
+            <div class="creator-part__textRight">
+                <p>Made With <i class="fas fa-heart"></i> by <span><a href="mailto:estefania.carevich@gmail.com" class="">Estefa</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

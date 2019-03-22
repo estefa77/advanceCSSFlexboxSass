@@ -1,3 +1,4 @@
+
 body {
 	font-family: 'Josefin Slab', serif;
 	font-weight: 400;
@@ -5,38 +6,69 @@ body {
 	line-height: 1.7;
 	color: $color-gray-dark;
 }
+
 .heading-primary {
 	color: $color-white;
 	text-transform: uppercase;
 	backface-visibility: hidden;
 	margin-bottom: 6rem;
+	
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Reklame Script W00 Bold";
 
 	&--main {
+
 		display: block;
-		font-size: 6rem;
-		font-weight: 400;
+		font-size: 8rem;
+		font-weight: 700;
+		padding: 0;
+
+		-webkit-animation: ColorAnimated 20s infinite alternate linear; 
+		-moz-animation: ColorAnimated 20s infinite alternate linear; 
+		-o-animation: ColorAnimated 20s infinite alternate linear; 
 		
-		animation-name: moveInLeft;
-		animation-duration: 2s;
-		animation-timing-function: ease-out;
-		
+		// animation-name: moveInLeft;
+		// animation-duration: 2s;
+		// animation-timing-function: ease-out;
 		//@include absCenter;
 
+		&::after,
+		&::before {
+			content: "";
+		    height: 1px;
+		    display: block;
+		    background-color: currentColor;
+		}
+		@include respond(tablet-portrait) {
+			font-size: 7rem;
+		}
 		@include respond(phone) {
 			letter-spacing: 1rem;
-			font-family: 5rem;
+			font-size: 5.5rem;
 			}
 
 		}
 	&--sub {
 		display: block;
 		font-size: 2rem;
-		font-weight: lighter;
-		letter-spacing: 1.75rem;
+		font-weight: 600;
+		letter-spacing: 1.5rem;
+		padding-top: 1rem;
+		font-family: 'Josefin Slab', serif;
 
 		animation-name: moveInRight;
 		animation-duration: 2s;
 		animation-timing-function: ease-out;	
+		
+			@include respond(phone) {
+				font-size: 1.5rem;
+			}
+			@include respond(tablet-portrait) {
+				font-size: 2rem;
+			}
 		}
 
 		@include respond(phone) {
@@ -47,7 +79,7 @@ body {
 .heading-secondary {
 	font-size: 4.5rem;
 	text-transform: uppercase;
-	font-weight: lighter;
+	font-weight: 500;
 	display: inline-block;
 	background-image: linear-gradient(
 		to right, $color-tertiary-light, $color-tertiary-dark);
@@ -55,6 +87,7 @@ body {
 	color: transparent;
 	letter-spacing: .2px;
 	transition: all .2s; 
+	font-family: "Reklame Script W00 Bold";
 
 	@include respond(tablet-portrait) {
 		font-size: 4rem;
@@ -74,14 +107,12 @@ body {
 	text-transform: uppercase;
 }
 .heading-four {
-	font-size: 3.5rem;
+	font-family: "Reklame Script W00 Bold";
+	font-size: 4.5rem;
 	text-transform: uppercase;
-	font-weight: lighter;
+	font-weight: 500;
 	display: inline-block;
-	//background-image: linear-gradient(
-		//to right, $color-black, $color-tertiary-dark-4);
 	-webkit-background-clip: text; //cut the bg using the linear-gradient
-	//color: transparent;
 	color: $color-white;
 	letter-spacing: .2px;
 	transition: all .2s; 
@@ -106,7 +137,8 @@ body {
 	font-weight: initial;
 	text-transform: uppercase;
 	margin: 3rem 0;
-	
+    font-family: "Reklame Script W00 Bold";
+
 	@include respond(tablet-portrait) {
 		font-size: 3.4rem;
 		margin: 0;
@@ -120,6 +152,7 @@ body {
 }
 
 .heading-six {
+    font-family: "Reklame Script W00 Bold";	
 	font-size: 3.5rem;
 	line-height: 4.5rem;
 	font-weight: initial;

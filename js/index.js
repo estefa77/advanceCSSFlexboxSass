@@ -20,4 +20,5 @@ $(document).ready(function(){
                 scrollTop: posicion
             }, 2000); 
         });
+
 });

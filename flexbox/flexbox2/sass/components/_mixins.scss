@@ -1,0 +1,40 @@
+@mixin fbxCenter-sp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin fbxCenter-c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@mixin hrefAnimated {
+    transform: rotate(5deg) scale(1.5);
+    box-shadow: 0 1rem 2rem rgba(17, 0, 51, 0.4);
+    padding: .5rem;
+    color: var(--color-dark-1);
+    background-color: goldenrod;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone500 {
+        @media only screen and (max-width: 500px) { @content }; //500px
+    }
+    @if $breakpoint == phone750 {
+        @media only screen and (max-width: 750px) { @content }; //600px
+    }
+    @if $breakpoint == tablet900 {
+        @media only screen and (max-width: 900px) { @content }; //900px
+    }
+    @if $breakpoint == tablet1200 {
+        @media only screen and (max-width: 1200px) { @content }; //1200 px
+    }
+    @if $breakpoint == desktop1400 {
+        @media only screen and (min-width: 1400px) { @content }; //1400px
+    }       
+}
+
+// @include fbxCenter-c;

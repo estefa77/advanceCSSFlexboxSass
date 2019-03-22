@@ -19,14 +19,14 @@
     );	
 */
 	
-	/*background-image: repeating-linear-gradient(
+	background-image: repeating-linear-gradient(
 		209deg, 
-		rgba(0, 0, 250, .8) -8px, 
-		rgba(0, 0, 0, .6) 40px, 
-		#ff98ff 40px, 
-		rgba(86, 45, 85, 0.9) 84px
+		rgba(#df0e62, .8) -8px, 
+		rgba(#fac70b, .6) 40px, 
+		#127681 40px, 
+		rgba(#21174a, 0.9) 84px
 		);
-*/
+
 
 	/*
 	BG mAGIC
@@ -42,60 +42,60 @@
 								white 0deg);
 	background-size: 11rem 11rem;
 	*/
-		background-image: /* Safari 5 */
-				-webkit-gradient(linear, 0 0, 0 100%, 
-					color-stop(0.5, rgba(255, 255, 255, 1)), 
-					color-stop(0.5, rgba(255, 255, 255, 0)), 
-					color-stop(1, rgba(255, 255, 255, 0))),
-				-webkit-gradient(linear, 0 0, 100% 0, 
-					color-stop(0.5, rgba(255, 255, 255, 1)), 
-					color-stop(0.5, rgba(255, 255, 255, 0)), 
-					color-stop(1, rgba(255, 255, 255, 0)));
-			background-image: /* chrome & nightly builds */
-				-webkit-linear-gradient(90deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0)),
-				-webkit-linear-gradient(0, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0));
-			background-image: /* Firefox */
-				-moz-linear-gradient(90deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0)),
-				-moz-linear-gradient(0, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0));
-			background-image: /* opera */
-				-ms-linear-gradient(90deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0) 100%),
-				-ms-linear-gradient(0deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0));
-			background-image: /* opera */
-				-o-linear-gradient(90deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0) 100%),
-				-o-linear-gradient(0, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0));
-			background-image: /* standard */
-				linear-gradient(90deg, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%,
-					rgba(255, 255, 255, 0) 100%),
-				linear-gradient(0, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 0));
+		// background-image: /* Safari 5 */
+		// 		-webkit-gradient(linear, 0 0, 0 100%, 
+		// 			color-stop(0.5, rgba(255, 255, 255, 1)), 
+		// 			color-stop(0.5, rgba(255, 255, 255, 0)), 
+		// 			color-stop(1, rgba(255, 255, 255, 0))),
+		// 		-webkit-gradient(linear, 0 0, 100% 0, 
+		// 			color-stop(0.5, rgba(255, 255, 255, 1)), 
+		// 			color-stop(0.5, rgba(255, 255, 255, 0)), 
+		// 			color-stop(1, rgba(255, 255, 255, 0)));
+		// 	background-image: /* chrome & nightly builds */
+		// 		-webkit-linear-gradient(90deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0)),
+		// 		-webkit-linear-gradient(0, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0));
+		// 	background-image: /* Firefox */
+		// 		-moz-linear-gradient(90deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0)),
+		// 		-moz-linear-gradient(0, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0));
+		// 	background-image: /* opera */
+		// 		-ms-linear-gradient(90deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0) 100%),
+		// 		-ms-linear-gradient(0deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0));
+		// 	background-image: /* opera */
+		// 		-o-linear-gradient(90deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0) 100%),
+		// 		-o-linear-gradient(0, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0));
+		// 	background-image: /* standard */
+		// 		linear-gradient(90deg, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%,
+		// 			rgba(255, 255, 255, 0) 100%),
+		// 		linear-gradient(0, 
+		// 			rgba(255, 255, 255, 1) 50%, 
+		// 			rgba(255, 255, 255, 0) 50%, 
+		// 			rgba(255, 255, 255, 0));
 			/* background-color: red; */
 /* 
 Anterior  

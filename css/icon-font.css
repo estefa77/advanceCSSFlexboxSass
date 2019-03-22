@@ -21,8 +21,6 @@
   text-transform: none !important;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 [class^="icon-"]:before,
@@ -34,8 +32,6 @@
   text-transform: none !important;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-arrows-anticlockwise:before {

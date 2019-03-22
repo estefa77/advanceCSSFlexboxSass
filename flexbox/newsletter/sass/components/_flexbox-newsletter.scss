@@ -1,0 +1,451 @@
+@mixin respond ($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) { @content }; //600px
+	}
+	@if $breakpoint == tablet-portrait {
+		@media only screen and (max-width: 56.25em) { @content }; //900px
+	}
+	@if $breakpoint == tablet-landscape {
+		@media only screen and (max-width: 75em) { @content }; //1200 px
+	}
+	@if $breakpoint == desktop {
+		@media only screen and (min-width: 112.5em) { @content }; //1800px
+	}		
+}
+
+/* START NEWSLETTER 1*/
+.newsletterMain {
+	display: flex;
+	flex-flow: column nowrap;
+
+	&__firstContainer{
+	    display: flex;
+	    flex-flow: column nowrap;
+	    align-items: center;
+
+		text-transform: uppercase;
+	    background: repeating-linear-gradient(
+	        45deg,
+	        #FBFDFC,
+	        #FBFDFC 10px,
+	        #0F1E45 10px,
+	        #0F1E45 25px
+	    );
+	    
+		&__circle {
+			height: 15rem;
+			width: 15rem;
+			border-radius: 50%;
+			background-color: #fff;
+			margin: 10px 40px;
+			font-family: "Engravers Gothic W01 Bold";
+		    color: #0F1E45;
+			box-shadow: 15px 15px 10px rgba(0,0,0,.5);
+
+			display: flex;
+		    align-self: flex-end;
+		    flex-flow: column wrap;
+		    justify-content: center;
+		    align-items: center;
+			
+			&--h2 {	
+				font-size: 6rem;
+				color: #15B257;
+				font-family: "Regular";
+
+			}
+		}		
+
+		&__boxContainer {
+		    background-color: #fff;
+			box-shadow: 15px 15px 10px rgba(0,0,0,.5);
+		    padding: 4rem;
+			color: #0F1D40;
+
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+
+			@include respond(tablet-portrait){
+				padding: 2rem; 
+			}
+
+			&--titleH2 {
+				font-size: 10rem;
+				letter-spacing: 2rem;
+				font-family: "Regular";
+				@include respond(tablet-portrait){
+					font-size: 7rem;
+				}
+			}
+			&--mintxt {
+				font-size: 3rem;
+				letter-spacing: 3px;
+			    font-family:"Engravers Gothic W01 Bold" !important;
+			}
+			&--titleH3 {
+				font-family: "Blenny W01 Black";
+				font-size: 3rem;
+				letter-spacing: 5px;
+			}
+		}
+
+		&__buttonContainer {
+			&--button {
+				text-transform: uppercase;
+			    width: 295px;
+			    height: 55px;
+			    margin: 5rem;
+			    outline: none;
+			    border: 0;
+			    color: #Fff;
+			    background-color: #15B257;
+			    font-family: "Engravers Gothic W01 Bold";
+			    font-size: 3rem;
+			    letter-spacing: 6px;
+			    transition: background-color .5s;
+
+				&:hover {
+					cursor: pointer;
+					color: #15B257;
+					background-color: #FFF;
+				}
+			}
+		}
+
+	}
+
+	&__footer {
+		display: flex;
+		
+		 &__details {
+	        text-align: center;
+	        background-color: #0F1D40;
+	        color: #888;
+	        height: auto;
+	        width: 100%;
+	        padding: 30px;
+	        padding: 4rem;
+	        font-family: Helvetica;
+	        font-size: 13px;
+
+	        h3 {
+	        	text-transform: uppercase;
+	        	padding: 10px;
+	        }
+
+	        p:last-child {
+	        	font-style: italic;
+	        	padding-top: 1.5rem;
+	        }
+	    }
+	}
+}
+
+/* START NEWSLETTER 2*/
+
+.newsletterLp {
+	margin: 20px auto;
+	
+	&__container {
+		display: flex;
+		flex-flow: row wrap;
+
+		width: 100%;
+
+		&__header {
+		    align-items: center;
+		    justify-content: space-between;
+
+			// height: 5rem;
+			width: 100%;
+			color: #1B1B1B;
+			border-bottom: solid 1px #B3B3B3;
+		    padding: 10px;
+		    margin-bottom: 2rem;
+		    background-color: #fff;
+			color: #000;
+			
+			@include respond(tablet-portrait){
+				display: flex;
+			}
+
+			@include respond(phone){
+				min-height: 9rem;
+				flex-direction: column;
+				margin-bottom: 0;
+			}
+
+			&--container{
+				font-size: 7rem;
+				line-height: 0;
+				font-family: "Reklame Script W00 Bold";
+
+				@include respond(tablet-portrait){
+					font-size: 4rem;
+				}
+			}
+
+			&--links {
+				display: flex;
+			    align-items: flex-end;
+			    justify-content: flex-end;
+
+				a {
+					text-decoration: none;
+					font-size: 2.5rem;
+					line-height: 1;
+					color: #000;
+					font-family: 'Open Sans Condensed', sans-serif;
+					padding: 1px 7px;
+					letter-spacing: -1px;
+					transition: all .5s;
+
+					&:hover {
+						color: #FFF;
+						background-color: #000;
+						cursor: pointer;
+						line-height: 1;
+					}
+				}	
+			}	
+		}
+
+		&__main {
+			display: flex;
+    		justify-content: center;
+			flex-grow: 1;
+			min-height: 82rem;
+			position: relative;
+
+			&__bg {				
+
+				background: transparent;
+				background: linear-gradient(to left bottom, 
+					#FFDCE2 50%, #ADCED3 50%);
+				position: absolute;
+				height: 100%;
+				width: 100%;
+			}
+
+			&__rombo {
+
+			    justify-content: center;
+			    display: flex;
+			    align-items: center;
+
+				 width: 450px; 
+			     height: 450px; 
+			     border: solid 1px #B3B3B3; 
+			     background-color: #FFF;
+			     -webkit-transform: rotate(45deg);
+			     -moz-transform: rotate(45deg);
+			     -ms-transform: rotate(45deg);
+			     -o-transform: rotate(45deg);
+			     transform: rotate(45deg);
+			     margin-top: 13rem;
+			     color: #000;
+			     box-shadow: 19px 15px 10px rgba(0, 0, 0, .9);
+	     		
+	     		@include respond(tablet-portrait){
+					width: 380px; 
+			     	height: 380px;
+				}
+	     		@include respond(phone){
+					transform: rotate(-360deg);
+					width: 320px;
+				}				
+
+			     &--container {
+					transform: rotate(-45deg);
+					display: flex;
+				    flex-direction: column;
+				    justify-items: center;
+				    align-items: center;	
+				 	@include respond(phone){
+						transform: rotate(-360deg);
+					}
+
+					h3 {
+						font-size: 5rem;
+						font-family: "Reklame Script W00 Bold";
+    					text-transform: capitalize;
+
+						// @include respond(tablet-portrait){
+						// 	margin-bottom: 2rem;
+						// }
+					}
+
+					&__detailsTop {
+						display: flex;
+						align-items: center;
+						&--medium-txt{
+							font-size: 5rem;
+							text-align: center;
+							font-family: "Kessel 205 W00 Thin" !important;
+
+							@include respond(tablet-portrait){
+								font-size: 3rem;
+							}
+						}
+						&--off {
+							font-size: 18rem;
+						    font-family: "HirukoStencil";
+						    line-height: 0rem;
+
+							@include respond(tablet-portrait){
+								font-size: 10rem;
+							}
+
+						}
+					}
+
+
+					&__detailsBottom {
+						width: 55%;
+					    line-height: 3rem;
+					    font-family: "Kessel 205 W00 Thin" !important;
+					    font-size: 1.8rem;
+					    letter-spacing: 2px;
+					    text-align: center;
+				    	@include respond(tablet-portrait){
+							margin-top: 2rem;
+						}
+					}
+					
+					&__button {
+						width: 250px;
+					    height: 37px;
+					    color: #FFF;
+					    text-transform: uppercase;
+					    background: #000;
+					    border: 0;
+					    outline: none;
+					    font-size: 1.8rem;
+					    letter-spacing: 3px;
+					    margin-top: 2rem;
+					    transition: all .5s;
+					    font-weight: bold;
+					    outline: none;
+
+					    &:hover {
+					    	background-color: #FFF;
+					    	color: #000;
+					    	cursor: pointer; 
+					    	border: solid 2px #000;
+					    	outline: none;
+					    }
+					}
+				}
+			}
+		}
+	}
+
+	&__footer {
+		background-color: #FFF;
+		height: auto;
+		margin-top: 3rem;
+		align-self: flex-end;
+	    
+	    @include respond(tablet-portrait){
+			margin-top: 0;
+		}		
+
+		&--title {
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			color: #000;
+			text-align: center;
+			border-top: solid 1px #B3B3B3;
+		    border-bottom: solid 1px #B3B3B3;
+		    padding: 10px 0;
+		    font-family: "HirukoStencil";
+		    font-size: 4rem;
+
+		    @include respond(tablet-portrait){
+				font-size: 2rem;
+			}
+		}
+		
+		&__containerSocialMedia {
+			
+			display: flex;
+			padding: 2.5rem;
+			align-items: center;
+		    border-bottom: solid 1px #B3B3B3;
+	    	
+	    	@include respond(phone){
+				flex-wrap: wrap;
+				padding: 1.5rem;
+			}
+
+			&__socialMediaText {
+				flex: 3 1 auto;
+				text-align: center;
+				font-family: "Reklame Script W00 Bold";
+    			font-size: 2.25rem;
+
+    			@include respond(tablet-portrait){
+					font-size: 2rem;
+				}
+				@include respond(phone){
+					margin: 5px auto;
+				}
+
+				&--links {
+					text-decoration: none;
+					color: #000;
+					padding: 5px 15px;
+					text-transform: uppercase;
+					transition: all .4s;
+
+						&:hover {
+							transform: rotate(5deg) scale(1.3);
+							box-shadow: 0 1.5rem 2.5rem rgba(#ADCED3, 1);
+						}
+
+				}
+			}
+
+			&__socialMediaImg {
+				display: flex;
+				flex: 3 1 auto;
+
+				@include respond(phone){
+					justify-content: center;
+					margin: 10px;
+				}
+
+				&--list {
+					list-style: none; 
+					display: flex;
+					li {
+					    a {
+							font-size: 2.5rem;
+						    color: #000;
+						    margin: 0 1rem;
+						    display: flex;
+	    					align-items: center;
+	    					text-decoration: none;
+	    					transition: all .5s;
+
+	    					&:hover{
+								transform: scale(1) rotateZ(360deg);
+								color: #ADCED3;
+	    					}
+					    }
+				  	}
+				}
+			}
+		}
+	}
+
+	.copy {
+		margin-top: 1rem;
+		color: #000;
+		text-align: center;
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
+}
+
+

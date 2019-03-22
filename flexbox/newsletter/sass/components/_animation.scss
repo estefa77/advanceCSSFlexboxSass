@@ -1,0 +1,23 @@
+@keyframes heart {
+    from { 
+    	transform: none; 
+    	color: yellow;
+    }
+
+    50% { 
+    	transform: scale(1.1); 
+    }
+    
+    to { 
+    	transform: none; 
+    }
+}
+
+@keyframes titleHeart {
+    0%  { color: #FFF; } 
+    20%  { color: #003a70; }
+    40%  { color: #FFF; }
+    60%  { color: #1b1b1b; }
+    80%  { color: #FFF; }
+    100% { color: #fac70b; }
+}

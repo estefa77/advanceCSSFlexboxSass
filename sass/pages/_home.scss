@@ -17,7 +17,7 @@
 	background-image: linear-gradient(
 		to right bottom, 
 		rgba($color-tertiary-light, 0.8), 
-		rgba($color-tertiary-dark, 0.8)), 
+		rgba($color-tertiary-dark, 1)), 
 	url(../img/nat-4.jpg);
 	background-size: cover;
 
@@ -53,6 +53,16 @@
 		rgba($color-tertiary-light, 0.8), 
 		rgba($color-tertiary-dark, 0.8)), 
 	url(../img/hero-small.jpg);
+
+
+	background: conic-gradient(#df0e62, #fac70b);
+	background: conic-gradient(at 10% 10%, #df0e62, #fac70b);
+	background: conic-gradient(from 0deg, #df0e62, #fac70b);
+	background: conic-gradient(from 0deg at center, #df0e62, #fac70b);
+	background: conic-gradient(#df0e62 0%, #fac70b 100%);
+	background: conic-gradient(#df0e62 0deg, #fac70b 2turn);
+
+	background: repeating-conic-gradient(#fac70b, #df0e62 77deg);
 
 	background-size: cover;
 	//margin-top: -10rem;
